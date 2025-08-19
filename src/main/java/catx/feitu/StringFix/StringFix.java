@@ -12,7 +12,7 @@ public final class StringFix extends JavaPlugin {
     @Override
     public void onEnable() {
         // 怎么会有光启用不注册的）））
-        Bukkit.getPluginManger().registerEvents(this, this);
+        Bukkit.getPluginManager().registerEvents(this, this);
     }
     @EventHandler
     public void onBlockFromToEvent(BlockFromToEvent event) {
