@@ -11,7 +11,8 @@ public final class StringFix extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
+        // 怎么会有光启用不注册的）））
+        Bukkit.getPluginManger().registerEvents(this, this);
     }
     @EventHandler
     public void onBlockFromToEvent(BlockFromToEvent event) {
